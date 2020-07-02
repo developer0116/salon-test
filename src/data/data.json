@@ -1,7 +1,7 @@
 [{
         "id": 0,
         "address": "Rådmansgatan 46, 113 57 Stockholm",
-        "time": "Öppet till 19:00 idag",
+        "openTime": "Öppet till 19:00 idag",
         "phone": "08-522 389 20",
         "website": "www.salongweb.se",
         "price": 320,
@@ -15,7 +15,7 @@
     {
         "id": 1,
         "address": "Rådmansgatan 84, 113 57 Stockholm",
-        "time": "Öppet till 19:00 idag",
+        "openTime": "Öppet till 19:00 idag",
         "phone": "08-522 389 20",
         "website": "www.salongweb.se",
         "price": 560,
@@ -29,8 +29,8 @@
     {
         "id": 2,
         "address": "Rådmansgatan 26, 113 57 Stockholm",
-        "time": "Öppet till 19:00 idag",
-        "phone": "08-522 389 20",
+        "openTime": "Öppet till 19:00 idag",
+        "phone": "08-849 748 53",
         "website": "www.salongweb.se",
         "price": 480,
         "name": "Sax & Fön",
@@ -43,7 +43,7 @@
     {
         "id": 3,
         "address": "Rådmansgatan 34, 113 57 Stockholm",
-        "time": "Öppet till 19:00 idag",
+        "openTime": "Öppet till 19:00 idag",
         "phone": "08-522 389 20",
         "website": "www.salongweb.se",
         "price": 120,
@@ -57,7 +57,7 @@
     {
         "id": 4,
         "address": "Rådmansgatan 64, 113 57 Stockholm",
-        "time": "Öppet till 19:00 idag",
+        "openTime": "Öppet till 19:00 idag",
         "phone": "08-522 389 20",
         "website": "www.salongweb.se",
         "price": 180,
@@ -71,7 +71,7 @@
     {
         "id": 5,
         "address": "Rådmansgatan 75, 113 57 Stockholm",
-        "time": "Öppet till 19:00 idag",
+        "openTime": "Öppet till 19:00 idag",
         "phone": "08-522 389 20",
         "website": "www.salongweb.se",
         "price": 390,
@@ -85,8 +85,8 @@
     {
         "id": 6,
         "address": "Rådmansgatan 69, 113 57 Stockholm",
-        "time": "Öppet till 19:00 idag",
-        "phone": "08-522 389 20",
+        "openTime": "Öppet till 19:00 idag",
+        "phone": "08-522 432 73",
         "website": "www.salongweb.se",
         "price": 270,
         "name": "Hair & Nu",

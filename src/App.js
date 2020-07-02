@@ -2,6 +2,8 @@ import React from 'react';
 import ListView from './pages/ListView';
 import SalonView from './pages/SalonView';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   BrowserRouter as Router,
   Switch,

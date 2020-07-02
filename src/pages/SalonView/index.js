@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import InfoContent from './../../components/InfoContent';
+import SchemaContent from './../../components/SchemaContent';
 import BackImg from './../../assets/img/image.jpg';
 import Rating from './../../components/Rating';
 import Tab from './../../components/Tab';
 import data from './../../data/data.json';
+import ArrowImg from './../../assets/img/arrow-left-white.svg';
+import HeartImg from './../../assets/img/heart.svg';
 
 const Hero = styled.div`
   width: 100%;
@@ -13,10 +17,11 @@ const Hero = styled.div`
   background-size: cover;
   position: relative;
 `;
+
 const Overlay = styled.div`
   position: absolute;
-  width: calc(100% - 32px);
-  height: calc(100% - 30px);
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 15px 16px;
@@ -30,6 +35,17 @@ const Name = styled.div`
   text-align: left;
   margin-top: auto;
 `;
+const HeaderButton = styled.img`
+  cursor: pointer;
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+`;
+const Span = styled.div`
+  background: #f9f9f9;
+  height: 20px;
+`;
 const tabs = ['Info', 'Schema'];
 export default function SalonView({}) {
   let { id } = useParams();
@@ -40,6 +56,12 @@ export default function SalonView({}) {
     <div>
       <Hero>
         <Overlay>
+          <div className="d-flex justify-content-between">
+            <Link to="/">
+              <HeaderButton src={ArrowImg} />
+            </Link>
+            <HeaderButton src={HeartImg} />
+          </div>
           <Name>{info.name}</Name>
           <Rating {...info} type={1} />
         </Overlay>
@@ -49,6 +71,12 @@ export default function SalonView({}) {
         current={currentTab}
         onChange={(active) => setCurrentTab(active)}
       ></Tab>
+      <Span></Span>
+      {currentTab == tabs[0] ? (
+        <InfoContent {...info} />
+      ) : (
+        <SchemaContent {...info} />
+      )}
     </div>
   );
 }

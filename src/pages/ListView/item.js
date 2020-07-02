@@ -2,14 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Rating from './../../components/Rating';
 import ArrowRightImg from './../../assets/img/arrow-right.svg';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Container = styled(Link)`
   /* margin: 0px 15px; */
   padding: 16px 15px;
@@ -24,6 +17,7 @@ const Container = styled(Link)`
   &:hover,
   &:active {
     background-color: #eeeeee;
+    text-decoration: none;
   }
 `;
 const Divider = styled.div`
@@ -39,6 +33,7 @@ const Name = styled.div`
   font-size: 20px;
   line-height: 29px;
   font-weight: 400;
+  color: #202020;
 `;
 const Address = styled.div`
   font-size: 15px;

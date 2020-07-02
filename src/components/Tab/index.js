@@ -10,9 +10,11 @@ const Item = styled.div`
   width: ${(props) => 100 / props.length}%;
   text-align: center;
   font-size: 15px;
+  font-weight: 500;
   line-height: 50px;
   background: white;
   color: #202020;
+  cursor: pointer;
   transition: all 300ms ease-in;
   border-bottom: ${(props) => (props.active ? '2px solid #b69f58' : 'none')};
 `;

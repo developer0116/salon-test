@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import ArrowLeftImg from './../../assets/img/arrow-left.svg';
 import FilterImg from './../../assets/img/filter.svg';
 const Container = styled.div`
-  height: 24px;
+  height: 60px;
   line-height: 22px;
-  padding: 14px 15px;
+  padding: 22px 15px 16px 15px;
   color: #202020;
   font-size: 24px;
   text-align: center;

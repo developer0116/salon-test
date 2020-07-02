@@ -12,6 +12,7 @@ const Main = styled.div`
   opacity: ${(props) => (props.isPlaceholder ? 0.7 : 1)};
   border-top: 1px solid #b69f58;
   border-bottom: 1px solid #b69f58;
+  cursor: pointer;
 `;
 const Toggle = styled.div`
   height: 12px;

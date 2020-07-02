@@ -6,7 +6,7 @@ import Item from './item';
 import data from './../../data/data.json';
 const Content = styled.div`
   overflow: auto;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 130px);
   margin-bottom: 12px;
 `;
 const filterData = [

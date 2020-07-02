@@ -9,31 +9,26 @@ const Container = styled.div`
 `;
 const Vote = styled.div`
   color: #656565;
-  font-size: 11px;
-  margin-left: 8px;
+  font-size: ${(props) => (props.type ? '13px' : '11px')};
+  line-height: ${(props) => (props.type ? '25px' : '30px')};
+  margin-left: 6px;
 `;
 const Star = styled.img`
-  width: 9px;
-  height: 9px;
-  margin-right: 3px;
+  width: ${(props) => (props ? '12px' : '9px')};
+  height: ${(props) => (props ? '12px' : '9px')};
+  margin-right: ${(props) => (props ? '6px' : '4px')};
 `;
-const FullStar = styled(Star)`
-  background: url(${StarFullImg}) no-repeat center;
-`;
-const EmptyStar = styled(Star)`
-  background: url(${StarEmptyImg}) no-repeat center;
-`;
-export default function _Rating({ rating, vote, type }) {
+export default function _Rating({ rating, vote, type = 0 }) {
   return (
     <Container>
       <Rating
         readonly={true}
         placeholderRating={rating}
-        emptySymbol={<Star src={StarEmptyImg} />}
-        fullSymbol={<Star src={StarFullImg} />}
-        placeholderSymbol={<Star src={StarFullImg} />}
+        emptySymbol={<Star src={StarEmptyImg} type={type} />}
+        fullSymbol={<Star src={StarFullImg} type={type} />}
+        placeholderSymbol={<Star src={StarFullImg} type={type} />}
       />
-      <Vote>{`(${vote})`}</Vote>
+      <Vote type={type}>{`(${vote})`}</Vote>
     </Container>
   );
 }
