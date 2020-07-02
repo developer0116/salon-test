@@ -34,6 +34,7 @@ const Name = styled.div`
   line-height: 29px;
   font-weight: 400;
   color: #202020;
+  font-family: 'MillerBanner-Light';
 `;
 const Address = styled.div`
   font-size: 15px;
@@ -53,7 +54,7 @@ const Value = styled.div`
   font-size: 15px;
   color: #202020;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 26px;
 `;
 export default function Item({
   name,

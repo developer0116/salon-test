@@ -34,6 +34,7 @@ const Name = styled.div`
   letter-spacing: -0.15px;
   text-align: left;
   margin-top: auto;
+  font-family: 'MillerBanner-Light';
 `;
 const HeaderButton = styled.img`
   cursor: pointer;

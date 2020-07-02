@@ -17,6 +17,10 @@ const Item = styled.div`
   cursor: pointer;
   transition: all 300ms ease-in;
   border-bottom: ${(props) => (props.active ? '2px solid #b69f58' : 'none')};
+  &:hover,
+  &:active {
+    font-weight: 700;
+  }
 `;
 export default function Tab({ data, current, onChange }) {
   return (

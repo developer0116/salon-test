@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
 `;
 const Vote = styled.div`
-  color: #656565;
+  color: ${(props) => (props.type ? 'white' : '#656565')};
   font-size: ${(props) => (props.type ? '13px' : '11px')};
   line-height: ${(props) => (props.type ? '25px' : '30px')};
   margin-left: 6px;

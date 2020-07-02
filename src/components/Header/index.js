@@ -11,6 +11,7 @@ const Container = styled.div`
   text-align: center;
   display: flex;
   justify-content: space-between;
+  font-family: 'MillerBanner-Light';
 `;
 const Button = styled.div`
   height: 18px;
