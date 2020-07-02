@@ -44,11 +44,11 @@ export default function SalonView({}) {
           <Rating {...info} type={1} />
         </Overlay>
       </Hero>
-      <Tab active={currentTab} onChange={(active) => setCurrentTab(active)}>
-        {tabs.map((tab) => {
-          return <div key={tab}>{tab}</div>;
-        })}
-      </Tab>
+      <Tab
+        data={tabs}
+        current={currentTab}
+        onChange={(active) => setCurrentTab(active)}
+      ></Tab>
     </div>
   );
 }

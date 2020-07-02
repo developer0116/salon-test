@@ -3,11 +3,13 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
+  width: 100%;
+  height: 50px;
 `;
 const Item = styled.div`
-  width: ${(props) => 100 / props.length}+ '%';
+  width: ${(props) => 100 / props.length}%;
   text-align: center;
-  font-size: 25px;
+  font-size: 15px;
   line-height: 50px;
   background: white;
   color: #202020;
@@ -23,6 +25,7 @@ export default function Tab({ data, current, onChange }) {
             key={item}
             active={current == item}
             onClick={() => onChange(item)}
+            length={data.length}
           >
             {item}
           </Item>
